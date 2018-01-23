@@ -34,8 +34,8 @@ from scipy.optimize import *
 #   * x  = value of x where Func(x) is the minimum
 #   * v  = value of moment 1 (velocity)
 #   * z = value ofmoment 2
-#   * min_Func = value of the minimum of Func(c)
-#   * it = integer where the algorithm stopped
+#   * min_Func = value of the minimum of Func(x)
+#   * min_it = iteration number where the algorithm stopped
 def Moment2(Func,Jac,lda,gamma,amp,tol,x_init,v_init,z_init, \
             itmax,K,it_init=None,bounds=None,DirDoF=None):
     print "Moment 2..."
@@ -114,14 +114,14 @@ def Moment2(Func,Jac,lda,gamma,amp,tol,x_init,v_init,z_init, \
 #   * v_init  = Initial guess for moment 1 (velocity)
 #   * itmax  = Interger, maximum number of iteration
 #   * K  = Interger, number of time to repeat the algorithm
-#   * it_init = Integer, iteration number where to start the algorithm
-#   * bounds  = Real of dimension 2 where each value of x has to be between
-#   * DirDoF = vector, degree(s) of freedom where x will not change
+#   * it_init (optional) = Integer, iteration number where to start the algorithm
+#   * bounds (optional) = Real of dimension 2 where each value of x has to be between
+#   * DirDoF (optional) = vector, degree(s) of freedom where x will not change
 # OUPUT:
 #   * x  = value of x where Func(x) is the minimum
 #   * v  = value of moment 1 (velocity)
-#   * min_Func = value of the minimum of Func(c)
-#   * it = integer where the algorithm stopped
+#   * min_Func = value of the minimum of Func(x)
+#   * min_it = iteration number where the algorithm stopped
 def Moment1(Func,Jac,lda,gamma,amp,tol,x_init,v_init,\
         itmax,K,it_init=None,bounds=None,DirDoF=None):
 
@@ -190,13 +190,13 @@ def Moment1(Func,Jac,lda,gamma,amp,tol,x_init,v_init,\
 #   * x_init  = Initial guess of x
 #   * itmax  = Interger, maximum number of iteration
 #   * K  = Interger, number of time to repeat the algorithm
-#   * it_init = Integer, iteration number where to start the algorithm
-#   * bounds  = Real of dimension 2 where each value of x has to be between
-#   * DirDoF = vector, degree(s) of freedom where x will not change
+#   * it_init (optional) = Integer, iteration number where to start the algorithm
+#   * bounds (optional) = Real of dimension 2 where each value of x has to be between
+#   * DirDoF (optional) = vector, degree(s) of freedom where x will not change
 # OUPUT:
 #   * x  = value of x where Func(x) is the minimum
-#   * min_Func = value of the minimum of Func(c)
-#   * it = integer where the algorithm stopped
+#   * min_Func = value of the minimum of Func(x)
+#   * min_it = iteration number where the algorithm stopped
 def GradientNoise(Func,Jac,gamma,amp,tol,x_init,itmax,K,it_init=None, \
         bounds=None,DirDoF=None):
     print "Gradient Descent Simulated Annealing..."
