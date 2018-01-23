@@ -26,7 +26,7 @@ from scipy.optimize import *
 #   * v_init  = Initial guess for moment 1 (velocity)
 #   * z_init  = Initial guess for moment 2
 #   * itmax  = Interger, maximum number of iteration
-#   * K  = Interger, number of time to repeat the algorithm
+#   * K  = Interger, number of times to repeat the algorithm
 #   * it_init (optional) = Integer, iteration number where to start the algorithm
 #   * bounds (optional) = Real of dimension 2 where each value of x has to be between
 #   * DirDoF (optional) = vector, degree(s) of freedom where x will not change
@@ -113,7 +113,7 @@ def Moment2(Func,Jac,lda,gamma,amp,tol,x_init,v_init,z_init, \
 #   * x_init  = Initial guess of x
 #   * v_init  = Initial guess for moment 1 (velocity)
 #   * itmax  = Interger, maximum number of iteration
-#   * K  = Interger, number of time to repeat the algorithm
+#   * K  = Interger, number of times to repeat the algorithm
 #   * it_init (optional) = Integer, iteration number where to start the algorithm
 #   * bounds (optional) = Real of dimension 2 where each value of x has to be between
 #   * DirDoF (optional) = vector, degree(s) of freedom where x will not change
@@ -189,7 +189,7 @@ def Moment1(Func,Jac,lda,gamma,amp,tol,x_init,v_init,\
 #   * tol =  Real number, tolerance for the convergence
 #   * x_init  = Initial guess of x
 #   * itmax  = Interger, maximum number of iteration
-#   * K  = Interger, number of time to repeat the algorithm
+#   * K  = Interger, number of times to repeat the algorithm
 #   * it_init (optional) = Integer, iteration number where to start the algorithm
 #   * bounds (optional) = Real of dimension 2 where each value of x has to be between
 #   * DirDoF (optional) = vector, degree(s) of freedom where x will not change
