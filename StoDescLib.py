@@ -179,6 +179,24 @@ def Moment1(Func,Jac,lda,gamma,amp,tol,x_init,v_init,\
 
     return [min_x,min_v,min_Func,min_it]
 
+
+# Gradient descent with Noise Algorithm
+# INPUT:
+#   * Func = Function to minimize
+#   * Jac  = Jacobian of the function to minimize
+#   * gamma =  Real number that divide the gradient
+#   * amp=  Real number, amplitude of the noise
+#   * tol =  Real number, tolerance for the convergence
+#   * x_init  = Initial guess of x
+#   * itmax  = Interger, maximum number of iteration
+#   * K  = Interger, number of time to repeat the algorithm
+#   * it_init = Integer, iteration number where to start the algorithm
+#   * bounds  = Real of dimension 2 where each value of x has to be between
+#   * DirDoF = vector, degree(s) of freedom where x will not change
+# OUPUT:
+#   * x  = value of x where Func(x) is the minimum
+#   * min_Func = value of the minimum of Func(c)
+#   * it = integer where the algorithm stopped
 def GradientNoise(Func,Jac,gamma,amp,tol,x_init,itmax,K,it_init=None, \
         bounds=None,DirDoF=None):
     print "Gradient Descent Simulated Annealing..."
