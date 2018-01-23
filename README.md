@@ -7,4 +7,4 @@ The idea is to add a Gaussian noise to a descent algorithm in order to converge 
 2. Moment 1 (Langevin)
 3. Moment 2. 
 
-To learn more about it, visit the [project's page](http://arthurbousquet.com/stochasticdescent.html) .
+To learn more about it, visit the [project's page](http://stochasticdescent.arthurbousquet.com) .
