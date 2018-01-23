@@ -9,6 +9,6 @@ The idea is to add a Gaussian noise to a descent algorithm in order to converge 
 
 ## About
 
-These algorithms were developed by Arthur Bousquet, Qipin Chen, Shuonan Wu.
+The authors are  Arthur Bousquet, Qipin Chen, Shuonan Wu.
 
 To learn more about it, visit the [project's page](http://stochasticdescent.arthurbousquet.com) .
