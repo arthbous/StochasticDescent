@@ -4,7 +4,7 @@ Non convex example
 """
 
 import numpy as np
-from StoDescLib import *
+from stdsct import *
 
 
 def f(xt):
